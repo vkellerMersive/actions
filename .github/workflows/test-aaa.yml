@@ -1,0 +1,13 @@
+name: test-aaa
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "packages/aaa/**"
+jobs:
+  publish:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "test-aaa ok"
